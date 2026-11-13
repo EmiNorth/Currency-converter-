@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <p class="subtitle">Convert your money easily</p>
+
+        <div class="converter">
+
+            <label>Enter Amount</label>
+            <input type="number" id="amount" value="1" min="0">
+
+            <label>From</label>
+            <select id="fromCurrency">
+                <option value="NGN">NGN - Naira</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="GHS">GHS - Ghana Cedi</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="INR">INR - Indian Rupee</option>
+            </select>
+
+            <button id="swap">⇅ Swap Currencies</button>
+
+            <label>To</label>
+            <select id="toCurrency">
+                <option value="USD">USD - US Dollar</option>
+                <option value="NGN">NGN - Naira</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="GHS">GHS - Ghana Cedi</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="INR">INR - Indian Rupee</option>
+            </select>
+
+            <button id="convert">Convert Now</button>
+
+            <div class="result">
+                <p>Converted Amount</p>
+                <h2 id="result">0.00</h2>
+                <small id="rate"></small>
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
